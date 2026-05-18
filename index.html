@@ -995,6 +995,25 @@
     transition: color 0.3s;
   }
   .contact-row a.v:hover { color: var(--accent); }
+  .email-alt {
+    display: inline-block;
+    margin-top: 8px;
+    font-family: var(--sans);
+    font-style: normal;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2px;
+    transition: color 180ms var(--ease-out), border-color 180ms var(--ease-out);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .email-alt:hover { color: var(--accent); border-color: var(--accent); }
+  }
+  @media (max-width: 720px) {
+    .email-alt, .email-alt-break { display: none; }
+  }
 
   /* ---------- FOOTER ---------- */
   footer {
@@ -1237,6 +1256,7 @@
       <div class="item">
         <div class="key">Email</div>
         <a href="mailto:visionarysolutionstbay@gmail.com?subject=Free%20Quote" class="val">visionarysolutionstbay@gmail.com</a>
+        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=visionarysolutionstbay@gmail.com&amp;su=Free%20Quote" target="_blank" rel="noopener noreferrer" class="email-alt">Open in Gmail →</a>
       </div>
       <div class="item">
         <div class="key">Service area</div>
@@ -1497,7 +1517,11 @@
         </div>
         <div class="contact-row">
           <span class="k">Email</span>
-          <a href="mailto:visionarysolutionstbay@gmail.com?subject=Free%20Quote" class="v">visionarysolutionstbay@gmail.com</a>
+          <div>
+            <a href="mailto:visionarysolutionstbay@gmail.com?subject=Free%20Quote" class="v">visionarysolutionstbay@gmail.com</a>
+            <br class="email-alt-break">
+            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=visionarysolutionstbay@gmail.com&amp;su=Free%20Quote" target="_blank" rel="noopener noreferrer" class="email-alt">Open in Gmail →</a>
+          </div>
         </div>
         <div class="contact-row">
           <span class="k">Area</span>
