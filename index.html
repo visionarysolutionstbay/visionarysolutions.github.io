@@ -995,6 +995,15 @@
     transition: color 0.3s;
   }
   .contact-row a.v:hover { color: var(--accent); }
+  .social-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 10px;
+  }
+  .social-dot {
+    color: var(--ink-faint);
+  }
   .email-alt {
     display: inline-block;
     margin-top: 8px;
@@ -1530,6 +1539,14 @@
         <div class="contact-row">
           <span class="k">Hours</span>
           <span class="v">By appointment, daily</span>
+        </div>
+        <div class="contact-row">
+          <span class="k">Social</span>
+          <div class="social-row">
+            <a href="https://www.facebook.com/profile.php?id=61589843050279" target="_blank" rel="noopener noreferrer" class="v">Facebook</a>
+            <span class="social-dot v">·</span>
+            <a href="https://www.instagram.com/visionarysolutionstbay/" target="_blank" rel="noopener noreferrer" class="v">Instagram</a>
+          </div>
         </div>
       </div>
     </div>
